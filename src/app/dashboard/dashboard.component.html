@@ -1,0 +1,51 @@
+<div class="wrapper">
+    <div id="card1"><img src="./assets/user.png" alt=""><h3>User Registrations</h3><h1>69</h1></div>
+    <div id="card2"><img src="./assets/add-to-cart.png" alt=""><h3>New Orders</h3><h1>420</h1></div>
+    <div id="card3"><img src="./assets/bounce-rate.png" alt=""><h3>Bounce Rate</h3><h1>33%</h1></div>
+    <div id="card4"><img src="./assets/visitor.png" alt=""><h3>Unique Visitors</h3><h1>42</h1></div>
+</div>
+<div class="gph_wrap">
+<div class="graphic">
+  <ngx-charts-line-chart
+    [view]="view"
+    [scheme]="colorScheme"
+    [legend]="legend"
+    [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel"
+    [xAxis]="xAxis"
+    [yAxis]="yAxis"
+    [xAxisLabel]="xAxisLabel"
+    [yAxisLabel]="yAxisLabel"
+    [timeline]="timeline"
+    [results]="multi"
+    [autoScale] = "autoScale"
+    (select)="onSelect($event)"
+    (activate)="onActivate($event)"
+    (deactivate)="onDeactivate($event)"
+
+    >
+  </ngx-charts-line-chart>
+</div>
+<div class="graphic">
+  <ngx-charts-bar-vertical-2d
+  [view]="view"
+  [scheme]="colorScheme"
+  [legend]="legend"
+  [showXAxisLabel]="showXAxisLabel"
+  [showYAxisLabel]="showYAxisLabel"
+  [xAxis]="xAxis"
+  [yAxis]="yAxis"
+  [xAxisLabel]="xAxisLabel"
+  [yAxisLabel]="yAxisLabel"
+  [results]="multi"
+  (select)="onSelect($event)"
+  (activate)="onActivate($event)"
+  (deactivate)="onDeactivate($event)">
+</ngx-charts-bar-vertical-2d>
+</div>
+</div>
+<!-- <mat-slider min="1" max="100" step="1" value="50"></mat-slider> -->
+<!-- <mat-paginator [length]="11" [pageSizeOptions]="[10,5]" aria-label="Select page">
+    <table><td>ASD</td><tr>assa</tr></table>
+
+</mat-paginator> -->

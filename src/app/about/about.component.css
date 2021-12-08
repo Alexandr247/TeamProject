@@ -1,0 +1,11 @@
+.logo {
+    font-size: 48px;
+    color: rgb(255, 87, 87);
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin: 50px 25%;
+    color: rgb(194, 194, 194);
+}
